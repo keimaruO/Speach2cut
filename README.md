@@ -1,6 +1,6 @@
 # Speach2cut
 
-Speach2cutはYouTubeでURLを指定して実行するだけで発話部分だけを全自動で1.wav...2.wav..のように出力するプログラムです。
+Speach2cutはYouTubeなどのURLをコピペして実行するだけで発話部分だけを全自動で1.wav,2.wav,3.wav...と出力するプログラムです。どっからどこまでの範囲指定もできる
 
 簡単にプログラムの説明をするとyt-dlpでwavだけをDLして、Whisperで字幕を生成、生成された.srtの各セクションのタイムコードの範囲だけをwavで出力
 
