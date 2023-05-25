@@ -54,7 +54,7 @@ gitとpythonのインストール手順はネットにめっちゃ転がって�
 # binフォルダに入れる
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/71b9fb7b-48a7-4844-b0ac-17cccf283fc1)
 
-そして、環境変数にC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\binをいれる
+そして、システム環境変数に`C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin`を追加する
 
 
 そして次に、エクスプローラーを開き保存したい好きな場所で上にあるファイルパスでcmdと入力してEnterキーを押すとそのパスでコマンドプロンプトが起動します。
@@ -73,15 +73,15 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py && 
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/a0bb7974-56b5-4ff2-aa43-7ee2a9a2fdf3)
 
 # 使い方
-dlurl.txtにURLを貼り付けてCtrl + S(上書き保存ショートカット)
+dlurl.txtにURLを貼り付けてCtrl + S　(上書き保存ショートカット)　時間指定されてない場合は動画全体がDLされる。
 
 main.pyをpythonで実行する。
 
-Speach2cutのフォルダでさっきみたいにcmd入力して下記のコマンドで実行できる
+Speach2cutのフォルダ上でさっきみたいにcmd入力して下記のコマンドを入力して実行できる
 ```
 python main.py
 ```
-初回だけWhisperの字幕モデルのダウンロードがあるので少々時間かかります。
+初回だけWhisperの字幕モデル(1.5GB)のダウンロードがあるので少々時間かかります。
 
 全部の処理が終わったらsozaiフォルダの中にwavが配置されてます。(入れ忘れてるpipなどあったら️🙇‍♂️教えて！)
 
@@ -106,12 +106,12 @@ where python
 
 このSpeach2cutは90%ぐらいChatGPTに書いてもらったやつなのでコード汚いままです
 
-# その他 豆知識的な
+# その他 豆知識的な余談
 
 python yt-dlp.pyってコマンドに入力してエンター押せば音声だけダウンロードしたい時にも単体で機能するから使えたりもする、yt-dlp.py中にあるの画質設定などのコマンド部分を変えれば普通に動画もいけるしめっちゃ細かく設定できるぜい！yt-dlp.py全文をChatGPTに送って何がしたいが細かく正確に言えば書いてくれる。
 
-Whisperに関してもコマンドプロンプトにwhisper-ctanslate2 [字幕作りたいファイル] --model [好きなの]ってやれば使える
+Whisperに関してもコマンドプロンプトにwhisper-ctanslate2 [音声ファイルor動画ファイル] --model [好きなやーつ]　ってやれば使える
 
-余談
+
 別ので作ってた、全自動切り抜き動画作成のプログラムを利用して作ったから謎に1x1のmp4ファイルを作ってるけどw 2時間ぐらいでとりま配布するのにてきとーに作ったから許して～
 あとプロジェクト名はタイポではなく、推し要素いれただけです～
