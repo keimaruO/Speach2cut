@@ -78,7 +78,7 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py && 
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/4f4e79af-164f-4425-af0f-1e5d0afb9797)
 
 # 使い方
-dlurl.txtにURLを貼り付けてCtrl + S　(上書き保存ショートカット)　時間指定されてない場合は動画全体がDLされる。
+dlurl.txtにURLを貼り付けてCtrl + S　(上書き保存ショートカット)　時間範囲を指定してないURLのみの場合は動画全体がDLされる。
 
 main.pyをpythonで実行する。
 
@@ -88,7 +88,7 @@ python main.py
 ```
 初回だけWhisperの字幕モデル(1.5GB)のダウンロードがあるので少々時間かかります。
 
-全部の処理が終わったらsozaiフォルダの中にwavが配置されてます。(入れ忘れてるpipなどあったら️🙇‍♂️教えて！)
+全部の処理が終わったらsozaiフォルダの中にwavが配置されてます。(もし入れ忘れてるpipなどあったら️🙇‍♂️教えて！)
 
 処理に使用した.srtファイルとwavはsozai/archive/フォルダに保存されてます
 
