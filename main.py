@@ -92,7 +92,7 @@ for file_name in os.listdir(output_yt_dlp_dir):
 
 scripts_dir = os.path.join(BASE_DIR, "scripts")
 input_wav = os.path.join(BASE_DIR, "scripts", "temp_1.wav")
-whisper_command = f'whisper-ctranslate2 "{input_wav}" --model tiny --compute_type auto --language Japanese --temperature_increment_on_fallback None"'
+whisper_command = f'whisper-ctranslate2 "{input_wav}" --model medium --compute_type auto --language Japanese --temperature_increment_on_fallback None"'
 print(whisper_command)
 subprocess.run(whisper_command, shell=True, cwd=scripts_dir)
 
