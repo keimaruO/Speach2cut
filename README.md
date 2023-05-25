@@ -87,4 +87,12 @@ python main.py
 
 # うまくいかない場合
 
-もし仮想環境を使用している場合はVisual Studio Codeの右下にあるインタプリタの設定で切り替えてVisual Studio Codeで実行してもらえればうまくいくかも？
+もしANACONDAなどいれててデフォルトのpythonがANCONDAのpythonになってるから厄介
+
+ANACONDA入れてるとpythonの環境変数管理がクソになるので、一度ANACONDAの環境変数を外して通常のpythonで実行すればいけるかもです。
+
+下記のコマンドでpythonがどこにあるか見えるようになります。自分が使いたいpythonに先程の呪文みたいなコマンドを入力すればいけるかもです。
+```
+where python
+```
+それでもまだ解決しない場合はChatGPTに聞いて欲しいです。
