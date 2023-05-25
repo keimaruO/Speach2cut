@@ -1,10 +1,10 @@
 # Speach2cut
 
-Speach2cutはYouTubeなどのURLをコピペして実行するだけで発話部分だけを全自動で1.wav,2.wav,3.wav...と出力するプログラムです。どっからどこまでの範囲指定もできる
+Speach2cutはYouTubeなどのURLをコピペして実行するだけで発話部分だけを全自動で1.wav,2.wav,3.wav...と出力するプログラムです。どこからどこまでをDLするかの範囲指定もできる
 
 簡単にプログラムの説明をするとyt-dlpでwavだけをDLして、Whisperで字幕を生成、生成された.srtの各セクションのタイムコードの範囲だけをwavで出力
 
-Whisperのモデルはmediumですが好きなのに変更可、ちなFaster Whisperを採用しているのでVRAM 4GBでもlarge-v2動くらしい。でも初期のモデルはmedium
+Whisperのモデルは初期でmedium、好きなのに変更可、ちなFaster Whisperを採用しているのでVRAM 4GBでもlarge-v2動くらしい。
 
 
 
@@ -22,7 +22,7 @@ Python https://www.python.org/downloads
 
 # CUDA Toolkit 11.7
 https://developer.nvidia.com/cuda-11-7-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
-# 各自の環境に合わせて選択↓
+# PC環境に合わせて選択↓
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/ad484c8d-574b-437d-ba58-6616a6bcd2e5)
 
 
