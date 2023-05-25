@@ -44,3 +44,15 @@ gitとpythonのインストール手順はネットにめっちゃ転がって�
 ```
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py && git clone https://github.com/keimaruO/Speach2cut.git && cd Speach2cut && python -m pip install --upgrade pip && pip install -r requirements.txt && curl -L https://github.com/yt-dlp/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip -o ffmpeg.zip && curl -L https://github.com/yt-dlp/yt-dlp/releases/download/2023.03.04/yt-dlp.exe -o yt-dlp.exe && tar -xf ffmpeg.zip && move ffmpeg-master-latest-win64-gpl\bin\ffmpeg.exe ffmpeg.exe && move ffmpeg-master-latest-win64-gpl\bin\ffplay.exe ffplay.exe && move ffmpeg-master-latest-win64-gpl\bin\ffprobe.exe ffprobe.exe && del ffmpeg.zip && del ../test/get-pip.py && rd /s /q ffmpeg-master-latest-win64-gpl
 ```
+
+
+# 使い方
+dlurl.txtにURLを貼り付けてCtrl + Sで保存して閉じる。
+
+main.pyをpythonで実行する。
+
+初回はWhisperの4GBほどのモデルのダウンロードがあるので時間かかります。
+
+処理が終わったらsozaiフォルダの中にwavが配置されてます。
+
+処理に使用した.srtファイルとwavはsozai/archive/フォルダに保存されてます
