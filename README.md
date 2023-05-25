@@ -4,7 +4,7 @@ Speach2cutはYouTubeなどのURLをコピペして実行するだけで発話部
 
 簡単にプログラムの説明をするとyt-dlpでwavだけをDLして、Whisperで字幕を生成、生成された.srtの各セクションのタイムコードの範囲だけをwavで出力
 
-Whisperのモデルはtinyです、ちなFaster Whisperを採用しているのでVRAM 4GBでもlarge-v2動くらしい。でも初期のモデルはmedium
+Whisperのモデルはmediumですが好きなのに変更可、ちなFaster Whisperを採用しているのでVRAM 4GBでもlarge-v2動くらしい。でも初期のモデルはmedium
 
 
 
