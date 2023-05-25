@@ -18,7 +18,7 @@ Speach2cutはYouTubeでURLを指定して実行するだけで発話部分だけ
 Git https://git-scm.com/downloads
 
 Python https://www.python.org/downloads
-(バージョンは3.10.7-3.11.3はいけるのはほぼ確定、これ以外は動作確認はしてないけど多分めっちゃ幅広くOKなはず)
+(バージョンは3.10.7-3.11.3はいけた、多分めっちゃ古くない限り幅広くOKなはず)
 
 CUDA Toolkit 11.7 https://developer.nvidia.com/cuda-11-7-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
 
