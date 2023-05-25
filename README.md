@@ -54,6 +54,8 @@ gitとpythonのインストール手順はネットにめっちゃ転がって�
 # binフォルダに入れる
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/71b9fb7b-48a7-4844-b0ac-17cccf283fc1)
 
+そして、環境変数にC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\binをいれる
+
 
 そして次に、エクスプローラーを開き保存したい好きな場所で上にあるファイルパスでcmdと入力してEnterキーを押すとそのパスでコマンドプロンプトが起動します。
 # インストールしたい場所↓
