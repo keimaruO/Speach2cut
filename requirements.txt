@@ -1,0 +1,3 @@
+git+https://github.com/jordimas/whisper-ctranslate2.git
+pysrt
+moviepy
