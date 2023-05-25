@@ -31,7 +31,7 @@ https://developer.nvidia.com/cuda-11-7-0-download-archive?target_os=Windows&targ
 https://developer.nvidia.com/rdp/cudnn-download
 # アカウントが必要↓
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/02b74725-50b9-4080-ae25-28f253c02841)
-# うまく作れればこうなる↓
+# アカウント作って開き直せばこの画面↓
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/b246ea34-1c01-41b9-a799-60d11cee1455)
 
 # zlib
@@ -46,18 +46,20 @@ http://www.winimage.com/zLibDll/zlib123dllx64.zip
 
 gitとpythonのインストール手順はネットにめっちゃ転がっているので各々調べてもらえたら嬉しいです。
 
-で、CUDA Toolkit 11.7、cuDNN、zlibのインストールに関しては、まずCUDAをインストールする。
+で、CUDA Toolkit 11.7、cuDNN、zlibのインストールに関しては、まずCUDA Toolkit 11.7をインストールする。
 
 終えたら
 
-# C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\に行き、このフォルダの中に解凍したcuDNNとzlibをドラッグ・アンド・ドロップする。
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\に行き、このフォルダの中に解凍したcuDNNとzlibを
+# 画像の通りにドラッグ・アンド・ドロップする。
+# これは外側
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/ea18620a-8dcd-442b-879b-3ed39d83db34)
-# binフォルダに入れる
+# binフォルダ内に入れる
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/570a5672-153b-43d6-812f-50223dc73fdb)
-# binフォルダに入れる
+# binフォルダ内に入れる
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/71b9fb7b-48a7-4844-b0ac-17cccf283fc1)
 
-そして、システム環境変数に`C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin`を追加する
+そして、システム環境変数に`C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin`を追加する、追加したらしっかり閉じる
 
 
 そして次に、エクスプローラーを開き保存したい好きな場所で上にあるファイルパスでcmdと入力してEnterキーを押すとそのパスでコマンドプロンプトが起動します。
