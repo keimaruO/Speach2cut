@@ -73,7 +73,7 @@ gitとpythonのインストール手順はネットにめっちゃ転がって�
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py && git clone https://github.com/keimaruO/Speach2cut.git && cd Speach2cut && python -m pip install --upgrade pip && pip install -r requirements.txt && curl -L https://github.com/yt-dlp/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip -o ffmpeg.zip && curl -L https://github.com/yt-dlp/yt-dlp/releases/download/2023.03.04/yt-dlp.exe -o yt-dlp.exe && tar -xf ffmpeg.zip && move ffmpeg-master-latest-win64-gpl\bin\ffmpeg.exe ffmpeg.exe && move ffmpeg-master-latest-win64-gpl\bin\ffplay.exe ffplay.exe && move ffmpeg-master-latest-win64-gpl\bin\ffprobe.exe ffprobe.exe && del ffmpeg.zip && rd /s /q ffmpeg-master-latest-win64-gpl
 ```
 
-![image](https://github.com/keimaruO/Speach2cut/assets/91080250/eb12974e-b4b4-493d-97c4-4b394d83b816)
+![image](https://github.com/keimaruO/Speach2cut/assets/91080250/4f4e79af-164f-4425-af0f-1e5d0afb9797)
 
 # 使い方
 dlurl.txtにURLを貼り付けてCtrl + S　(上書き保存ショートカット)　時間指定されてない場合は動画全体がDLされる。
