@@ -59,7 +59,7 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\に行き、このフ�
 # binフォルダ内に入れる
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/71b9fb7b-48a7-4844-b0ac-17cccf283fc1)
 
-そして、システム環境変数に`C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin`を追加する、追加したらしっかり閉じる
+そして、システム環境変数にいき、pathに`C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin`を追加する、追加したらしっかり閉じる
 
 
 そして次に、エクスプローラーを開き保存したい好きな場所で上にあるファイルパスでcmdと入力してEnterキーを押すとそのパスでコマンドプロンプトが起動します。
