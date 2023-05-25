@@ -4,7 +4,7 @@ Speach2cutはYouTubeでURLを指定して実行するだけで発話部分だけ
 
 簡単にプログラムの説明をするとyt-dlpでwavだけをDLして、Whisperで字幕を生成、生成された.srtの各セクションのタイムコードの範囲だけをwavで出力
 
-Whisperはtinyです、ちなFaster Whisperを採用しているのでVRAM 4GBでもlarge-v2動きます。
+Whisperはtinyです、ちなFaster Whisperを採用しているのでVRAM 4GBでもlarge-v2動きます。でも初期はmedium
 
 
 
@@ -61,7 +61,7 @@ gitとpythonのインストール手順はネットにめっちゃ転がって�
 # cmdと入力してEnter↓
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/1951292f-c61b-483d-9358-7baff44e9343)
 
-
+# クソ長コマンド実行
 そして以下のコマンドを実行して、環境構築を行います。(下記のコマンドはpipのアップデートからクローン、圧縮ファイルの解凍、インストールに使った不要ファイルの削除まで全部してくれるコマンドです)
     
 ```
@@ -71,22 +71,24 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py && 
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/a0bb7974-56b5-4ff2-aa43-7ee2a9a2fdf3)
 
 # 使い方
-dlurl.txtにURLを貼り付けてCtrl + Sで保存して閉じる。
+dlurl.txtにURLを貼り付けてCtrl + S(ショートカット)で上書き保存
 
 main.pyをpythonで実行する。
 
-さっき開いたコマンドプロンプトに下記のを入力すれば実行できるはず。
+Speach2cutのフォルダでさっきみたいにcmd入力して下記のコマンドで実行できる
 ```
 python main.py
 ```
 初回だけWhisperの字幕モデルのダウンロードがあるので少々時間かかります。
 
-処理が終わったらsozaiフォルダの中にwavが配置されてます。
+全部の処理が終わったらsozaiフォルダの中にwavが配置されてます。(入れ忘れてるpipなどあったら🙇‍♂️)
 
 処理に使用した.srtファイルとwavはsozai/archive/フォルダに保存されてます
 
-sozai/archive/は処理に使用したものをずっと保存させれますが
-1.wav..2.wav..などと生成されたN.wavファイルは実行するたびに上書きされるので消えてほしくない人は移動させて管理しとくこと！
+sozai/archive/には処理に使用したものをずっと保存させれるが
+1.wav..2.wav..などのファイルはmain.pyを実行するたびに上書きされるので消えてほしくない人は移動させて管理しとくこと！
+
+モデルの変え方はmain.pyの行目にあるmediumを変更してください、モデルの種類は各自調べて欲しいです。(large-v2が最強だけど処理時間遅、tinyは最速だが精度悪。mediumが妥当、、、？)
 
 # うまくいかない場合
 
