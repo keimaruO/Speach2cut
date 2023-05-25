@@ -85,6 +85,9 @@ python main.py
 
 処理に使用した.srtファイルとwavはsozai/archive/フォルダに保存されてます
 
+sozai/archive/は処理に使用したものをずっと保存させれますが
+1.wav..2.wav..などと生成されたN.wavファイルは実行するたびに上書きされるので消えてほしくない人は移動させて管理しとくこと！
+
 # うまくいかない場合
 
 もしANACONDAなどいれててデフォルトのpythonがANCONDAのpythonになってるから厄介
