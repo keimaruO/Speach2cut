@@ -4,7 +4,11 @@ Speach2cutはYouTubeでURLを指定して実行するだけで発話部分だけ
 
 簡単にプログラムの説明をするとyt-dlpでwavだけをDLして、Whisperで字幕を生成、生成された.srtの各セクションのタイムコードの範囲だけをwavで出力
 
-# 環境構築(動画でわかりやすく導入するための作るか迷ってる)
+
+
+
+
+# 環境構築
 
 新品のピカピカのPCでも以下の手順で環境構築ができます。
 
@@ -21,6 +25,8 @@ CUDA Toolkit 11.7 https://developer.nvidia.com/cuda-11-7-0-download-archive?targ
 cuDNN https://developer.nvidia.com/rdp/cudnn-download
 
 zlib https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-zlib-windows
+
+
 
 # インストール手順
 
