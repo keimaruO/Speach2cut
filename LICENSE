@@ -1,14 +1,4 @@
-This project uses the following open-source libraries:
-
-- [Moviepy](https://github.com/Zulko/moviepy) - Released under the MIT License
-- [pysrt](https://github.com/byroot/pysrt) - Released under the GPL-3.0 License
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - Released under the Unlicense License
-- [FFmpeg-Builds](https://github.com/yt-dlp/FFmpeg-Builds) - Released under the MIT License
-
-
-
-
-                     GNU GENERAL PUBLIC LICENSE
+                    GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
