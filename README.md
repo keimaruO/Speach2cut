@@ -1,8 +1,10 @@
 # Speach2cut
 
-Speach2cutはYouTubeでURLを指定して実行するだけで発話部分だけを1.wav...2.wav..のように出力するプログラムです。
+Speach2cutはYouTubeでURLを指定して実行するだけで発話部分だけを全自動で1.wav...2.wav..のように出力するプログラムです。
 
-# 環境構築
+簡単にプログラムの説明をするとyt-dlpでwavだけをDLして、Whisperで字幕を生成、生成された.srtの各セクションのタイムコードの範囲だけをwavで出力
+
+# 環境構築(動画でわかりやすく導入するための作るか迷ってる)
 
 新品のピカピカのPCでも以下の手順で環境構築ができます。
 
@@ -22,9 +24,16 @@ zlib https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install
 
 # インストール手順
 
-エクスプローラーを開き保存したい場所で上にあるファイルパスでcmdと入力してEnterキーを押すとそのパスでコマンドプロンプトが起動します。
+gitとpythonのインストール手順はネットにめっちゃ転がっているので各々調べてもらえたら嬉しいです。
 
-そして以下のコマンドを実行して、環境構築を行います。
+で、CUDA Toolkit 11.7、cuDNN、zlibのインストールに関しては、まずCUDAをインストールする。
+
+終えたら、C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\に行き、このフォルダの中にcuDNNとzlibをドラッグ・アンド・ドロップする。
+
+
+そして次に、エクスプローラーを開き保存したい好きな場所で上にあるファイルパスでcmdと入力してEnterキーを押すとそのパスでコマンドプロンプトが起動します。
+
+そして以下のコマンドを実行して、環境構築を行います。(下記のコマンドはpipのアップデートからクローン、圧縮ファイルの解凍、インストールに使った不要ファイルの削除まで全部してくれるコマンドです)
     
 ```
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py && git clone https://github.com/keimaruO/Speach2cut.git && cd Speach2cut && python -m pip install --upgrade pip && pip install -r requirements.txt && curl -L https://github.com/yt-dlp/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip -o ffmpeg.zip && curl -L https://github.com/yt-dlp/yt-dlp/releases/download/2023.03.04/yt-dlp.exe -o yt-dlp.exe && tar -xf ffmpeg.zip && move ffmpeg-master-latest-win64-gpl\bin\ffmpeg.exe ffmpeg.exe && move ffmpeg-master-latest-win64-gpl\bin\ffplay.exe ffplay.exe && move ffmpeg-master-latest-win64-gpl\bin\ffprobe.exe ffprobe.exe && del ffmpeg.zip && del ../test/get-pip.py && rd /s /q ffmpeg-master-latest-win64-gpl
