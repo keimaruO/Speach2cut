@@ -20,19 +20,22 @@ Git https://git-scm.com/downloads
 Python https://www.python.org/downloads
 (オススメは3.10.6  ちな3.10.7-3.11.3でもいける、多分めっちゃ古くない限り幅広くOK)
 
-CUDA Toolkit 11.7 https://developer.nvidia.com/cuda-11-7-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
+# CUDA Toolkit 11.7
+https://developer.nvidia.com/cuda-11-7-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
 # 各自の環境に合わせて選択↓
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/ad484c8d-574b-437d-ba58-6616a6bcd2e5)
 
 
 
-cuDNN https://developer.nvidia.com/rdp/cudnn-download
+# cuDNN
+https://developer.nvidia.com/rdp/cudnn-download
 # アカウントが必要↓
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/02b74725-50b9-4080-ae25-28f253c02841)
 # うまく作れればこうなる↓
 ![image](https://github.com/keimaruO/Speach2cut/assets/91080250/b246ea34-1c01-41b9-a799-60d11cee1455)
 
-zlib http://www.winimage.com/zLibDll/zlib123dllx64.zip
+# zlib
+http://www.winimage.com/zLibDll/zlib123dllx64.zip
 
 
 
@@ -70,7 +73,7 @@ gitとpythonのインストール手順はネットにめっちゃ転がって�
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py && git clone https://github.com/keimaruO/Speach2cut.git && cd Speach2cut && python -m pip install --upgrade pip && pip install -r requirements.txt && curl -L https://github.com/yt-dlp/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip -o ffmpeg.zip && curl -L https://github.com/yt-dlp/yt-dlp/releases/download/2023.03.04/yt-dlp.exe -o yt-dlp.exe && tar -xf ffmpeg.zip && move ffmpeg-master-latest-win64-gpl\bin\ffmpeg.exe ffmpeg.exe && move ffmpeg-master-latest-win64-gpl\bin\ffplay.exe ffplay.exe && move ffmpeg-master-latest-win64-gpl\bin\ffprobe.exe ffprobe.exe && del ffmpeg.zip && rd /s /q ffmpeg-master-latest-win64-gpl
 ```
 
-![image](https://github.com/keimaruO/Speach2cut/assets/91080250/a0bb7974-56b5-4ff2-aa43-7ee2a9a2fdf3)
+![image](https://github.com/keimaruO/Speach2cut/assets/91080250/eb12974e-b4b4-493d-97c4-4b394d83b816)
 
 # 使い方
 dlurl.txtにURLを貼り付けてCtrl + S　(上書き保存ショートカット)　時間指定されてない場合は動画全体がDLされる。
