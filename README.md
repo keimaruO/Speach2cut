@@ -96,3 +96,5 @@ ANACONDA入れてるとpythonの環境変数管理がクソになるので、一
 where python
 ```
 それでもまだ解決しない場合はChatGPTに聞いて欲しいです。
+
+このSpeach2cutは90%ぐらいChatGPTに書いてもらったやつなのでコード汚いままです
